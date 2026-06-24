@@ -12,7 +12,7 @@ provider "aws" {
     region = "us-east-1"
 }
 
-resource "main_instance" "demo" {
+resource "aws_instance" "demo" {
     ami = "ami-020cba7c55df1f615"
     instance_type = "t2.micro"
 
